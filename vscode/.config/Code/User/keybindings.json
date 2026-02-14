@@ -1,0 +1,15 @@
+// --------------- Custom Keybindings ---------------
+[
+    // Altera o atalho de comentar linha para Ctrl + ; (mais confortável em teclados ABNT)
+    {
+        "key": "ctrl+;",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Desativa o atalho padrão (Ctrl + /) para evitar conflitos
+    {
+        "key": "ctrl+/",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    }
+]
